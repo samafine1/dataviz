@@ -47,7 +47,7 @@ function setup() {
         time = map(time, 0, 50, 30, 255); //remap the time variable
         sensor = map(sensor, 40, 3000, 25, 450); //remap the sensor variable
         //look of ellipses
-        fill(255, 100, time, 220); //time changes the fill color
+        fill(155, 100, time, 120); //time changes the fill color
         strokeWeight(1);
         stroke(time);
 
