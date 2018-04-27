@@ -60,7 +60,7 @@ function setup() {
         x += spacing;
     }
     noStroke();
-    text("level", 30, y + 10);
+    text("level", 30, y*1000);
 }
 
 function draw() {
