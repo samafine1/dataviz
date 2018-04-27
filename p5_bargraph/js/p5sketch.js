@@ -19,7 +19,7 @@ function preload() {
 function setup() {
     //setup look
     createCanvas(1000, 600);
-    background(220, 0, 100);
+    background(120, 0, 100);
     rectMode(CORNERS);
     //location variables
 
