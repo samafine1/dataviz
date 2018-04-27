@@ -45,7 +45,7 @@ function setup() {
         print(sensor);
 
         time = map(time, 0, 50, 30, 255); //remap the time variable
-        sensor = map(sensor, 40, 30000, 25, 450); //remap the sensor variable
+        sensor = map(sensor, 40, 3000, 25, 450); //remap the sensor variable
         //look of ellipses
         fill(255, 100, time, 220); //time changes the fill color
         strokeWeight(1);
@@ -60,7 +60,7 @@ function setup() {
         x += spacing;
     }
     noStroke();
-    text("level", 30, y*1000);
+    text("level", 30, y+10);
 }
 
 function draw() {
