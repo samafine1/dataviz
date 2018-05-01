@@ -30,7 +30,7 @@ function setup() {
     stroke(255);
     for (var i = 20; i < y; i += 10) {
         line(50, i, 500, i);
-        text(1000000 - (parseInt(i))*1000, 50, i);
+        text(500000 - (parseInt(i))*1000, 50, i);
     }
 
     //iterate thorough all rows of CSV file
@@ -45,7 +45,7 @@ function setup() {
         print(sensor);
 
         time = map(time, 0, 50, 30, 255); //remap the time variable
-        sensor = map(sensor, 40, 3000, 25, 450); //remap the sensor variable
+        sensor = map(sensor, 40, 30, 25, 450); //remap the sensor variable
         //look of ellipses
         fill(155, 100, time, 120); //time changes the fill color
         strokeWeight(1);
