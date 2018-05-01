@@ -53,14 +53,15 @@ function setup() {
 
         rect(x, y/10000, x + spacing, (y/10000) - sensor);
 
-
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
         x += spacing;
+        y += 3*spacing;
     }
     noStroke();
-    text("level", 30, y+10);
+    text("Gun application Denials", 30, y+20);
+     text("Year", x+30, 20);
 }
 
 function draw() {
