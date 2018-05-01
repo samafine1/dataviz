@@ -5,7 +5,7 @@ var table;
 var row;
 var time;
 var sensor;
-var spacing = 25;
+var spacing = 50;
 
 var x;
 var y;
@@ -29,8 +29,8 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 20; i < y; i += 10) {
-        line(40, i, 500, i);
-        text(1000000 - (parseInt(i))*1000, 54, i);
+        line(50, i, 500, i);
+        text(1000000 - (parseInt(i))*1000, 50, i);
     }
 
     //iterate thorough all rows of CSV file
