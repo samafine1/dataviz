@@ -29,8 +29,8 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 20; i < y; i += 10) {
-        line(30, i, 500, 2*i);
-        text(540000 - (parseInt(i))*500, 30, 2*i);
+        line(30, i, 500, i);
+        text(540000 - (parseInt(i))*1000, 30, i);
     }
 
     //iterate thorough all rows of CSV file
