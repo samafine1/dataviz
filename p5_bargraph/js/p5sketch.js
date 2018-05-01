@@ -51,7 +51,7 @@ function setup() {
         strokeWeight(1);
         stroke(time);
 
-        rect(x, (y/1000)-500, x + spacing, (-y/1000)-5000 + sensor);
+        rect(x, (y/1000)-500, x + spacing, (y/1000)-5000 - sensor);
 
 
         textAlign(CENTER);
