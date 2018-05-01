@@ -29,8 +29,8 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 20; i < y; i += 10) {
-        line(10, i, 500, i);
-        text(500000 - (parseInt(i))*1000, 10, i);
+        line(30, i, 500, i);
+        text(540000 - (parseInt(i))*1000, 30, i);
     }
 
     //iterate thorough all rows of CSV file
@@ -44,8 +44,8 @@ function setup() {
         print(time); //optional but helpful
         print(sensor);
 
-        time = map(time/100, 0, 50, 30, 255); //remap the time variable
-        sensor = map(sensor/100, 40, 30, 25, 450); //remap the sensor variable
+        time = map(time/10000, 0, 50, 30, 255); //remap the time variable
+        sensor = map(sensor/10000, 40, 30, 25, 450); //remap the sensor variable
         //look of ellipses
         fill(155, 100, time, 120); //time changes the fill color
         strokeWeight(1);
