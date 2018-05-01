@@ -23,14 +23,14 @@ function setup() {
     rectMode(CORNERS);
     //location variables
 
-    x = 100;
-    y = height - 100;
+    x = 50;
+    y = height - 50;
 
     //draw graph lines
     stroke(255);
     for (var i = 20; i < y; i += 10) {
-        line(50, i, 500, i);
-        text(500000 - (parseInt(i))*1000, 50, i);
+        line(10, i, 500, i);
+        text(500000 - (parseInt(i))*1000, 10, i);
     }
 
     //iterate thorough all rows of CSV file
