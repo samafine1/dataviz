@@ -51,13 +51,13 @@ function setup() {
         strokeWeight(1);
         stroke(time);
 
-        rect(x, (-y/1000), x + spacing, (y/1000) - sensor);
+        rect(x, (-y/1000), x + spacing, (y/1000) + sensor);
 
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
         x += spacing;
-        y += 3*spacing;
+        y += spacing;
     }
     noStroke();
     text("Gun application Denials", 30, y+10);
