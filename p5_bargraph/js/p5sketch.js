@@ -5,7 +5,7 @@ var table;
 var row;
 var time;
 var sensor;
-var spacing = 50;
+var spacing = 25;
 
 var x;
 var y;
