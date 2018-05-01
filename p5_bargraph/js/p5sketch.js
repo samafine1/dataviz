@@ -18,7 +18,7 @@ function preload() {
 
 function setup() {
     //setup look
-    createCanvas(1000, 600);
+    createCanvas(5000, 600);
     background(200, 50, 240);
     rectMode(CORNERS);
     //location variables
@@ -44,8 +44,8 @@ function setup() {
         print(time); //optional but helpful
         print(sensor);
 
-        time = map(time, 0, 50, 30, 255); //remap the time variable
-        sensor = map(sensor, 40, 30, 25, 450); //remap the sensor variable
+        time = map(time/100, 0, 50, 30, 255); //remap the time variable
+        sensor = map(sensor/100, 40, 30, 25, 450); //remap the sensor variable
         //look of ellipses
         fill(155, 100, time, 120); //time changes the fill color
         strokeWeight(1);
