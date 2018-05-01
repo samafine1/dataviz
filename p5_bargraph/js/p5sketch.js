@@ -30,7 +30,7 @@ function setup() {
     stroke(255);
     for (var i = 20; i < y; i += 10) {
         line(20, i, 500, i);
-        text(100000 - (parseInt(i))*100, 20, i);
+        text(100000 - (parseInt(i))*1000, 20, i);
     }
 
     //iterate thorough all rows of CSV file
