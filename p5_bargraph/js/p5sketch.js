@@ -61,7 +61,7 @@ function setup() {
     }
     noStroke();
     text("Gun application Denials", 30, y+10);
-     text("Year", 30, 0);
+     text("Year", 30, x);
 }
 
 function draw() {
