@@ -60,7 +60,7 @@ function setup() {
         y += 3*spacing;
     }
     noStroke();
-    text("Gun application Denials", 30, y-10);
+    text("Gun application Denials", 30, y+10);
      text("Year", 30, -750);
 }
 
