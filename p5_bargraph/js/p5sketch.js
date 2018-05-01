@@ -23,8 +23,8 @@ function setup() {
     rectMode(CORNERS);
     //location variables
 
-    x = 50;
-    y = height - 50;
+    x = 100;
+    y = height - 100;
 
     //draw graph lines
     stroke(255);
