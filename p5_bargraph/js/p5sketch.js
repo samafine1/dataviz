@@ -51,7 +51,7 @@ function setup() {
         strokeWeight(1);
         stroke(time);
 
-        rect(x, (y/10000)-500, x + spacing, (y/10000)-500 - sensor);
+        rect(x, (y/10000)-750, x + spacing, (y/10000)-750 - sensor);
 
         textAlign(CENTER);
         fill(255);
@@ -60,8 +60,8 @@ function setup() {
         y += 3*spacing;
     }
     noStroke();
-    text("Gun application Denials", 30, y+20);
-     text("Year", x+30, 20);
+    text("Gun application Denials", 30, y+10);
+     text("Year", 30, 25);
 }
 
 function draw() {
