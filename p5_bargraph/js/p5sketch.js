@@ -18,7 +18,7 @@ function preload() {
 
 function setup() {
     //setup look
-    createCanvas(1000, 6000);
+    createCanvas(1000, 1000);
     background(200, 50, 240);
     rectMode(CORNERS);
     //location variables
