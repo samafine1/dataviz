@@ -6,12 +6,12 @@ var row;
 var time;
 var sensor;
 var spacing = 25;
-let U = "Urban Greening"
-let C = "Community Stewardship"
-let D = "Community Development"
-let E = "Eco-Literacy"
-let A = "Urban Greening, Community Stewardship, Community Development"
-let B = "Urban Greening, Eco-Literacy"
+// let U = "Urban Greening"
+// let C = "Community Stewardship"
+// let D = "Community Development"
+// let E = "Eco-Literacy"
+// let A = "Urban Greening, Community Stewardship, Community Development"
+// let B = "Urban Greening, Eco-Literacy"
 
 var x;
 var y;
@@ -34,30 +34,30 @@ function setup() {
 
     //draw graph lines
     stroke(255);
-    for (var i = 20; i < y; i += 10) {
+    for (var i = 20; i < y; i += 20) {
         line(30, i, 500, i);
         text(540000 - (parseInt(i))*1000, 30, i);
     }
 
     //iterate thorough all rows of CSV file
-    for (var r = 0; r < table.getRowCount(); r++) {
+    for (var r = 1; r < table.getRowCount(); r++) {
         row = table.getRow(r);
         //print it column by column
         //note: a row is an object, not an array
-        time = row.getNum(0);
-        sensor = row.getNum(1);
+        activity = row.getNum(0);
+        num = row.getNum(1);
 
-        print(time); //optional but helpful
-        print(sensor);
+        print(activity); //optional but helpful
+        print(num);
 
-        time = map(time/10000, 0, 50, 15, 255); //remap the time variable
-        sensor = map(sensor/10000, 40, 15, 25, 450); //remap the sensor variable
+        activity = map(activity, 0, 50, 15, 255); //remap the time variable
+        num = map(num, 40, 15, 25, 450); //remap the sensor variable
         //look of ellipses
-        fill(255, 100, time, 120); //time changes the fill color
+        fill(255, 100, activity, 120); //time changes the fill color
         strokeWeight(1);
-        stroke(time);
+        stroke(activity);
 
-        rect(x, (-y/1000), x + spacing, (-y/1000) + sensor);
+        rect(x, (-y/1000), x + spacing, (-y/1000) + num);
 
         textAlign(CENTER);
         fill(255);
