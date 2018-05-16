@@ -43,20 +43,20 @@ function setup() {
         row = table.getRow(r);
         //print it column by column
         //note: a row is an object, not an array
-        time = row.getNum(0);
-        sensor = row.getNum(1);
+        activity = row.getNum(0);
+        num = row.getNum(1);
 
-        print(time); //optional but helpful
-        print(sensor);
+        print(activity); //optional but helpful
+        print(num);
 
-        time = map(time/10000, 0, 50, 15, 255); //remap the time variable
-        sensor = map(sensor/10000, 40, 15, 25, 450); //remap the sensor variable
+        activity = map(activity/10000, 0, 50, 15, 255); //remap the time variable
+        num = map(num/10000, 40, 15, 25, 450); //remap the sensor variable
         //look of ellipses
-        fill(255, 100, time, 120); //time changes the fill color
+        fill(255, 100, activity, 120); //time changes the fill color
         strokeWeight(1);
-        stroke(time);
+        stroke(Activity);
 
-        rect(x, (-y/1000), x + spacing, (-y/1000) + sensor);
+        rect(x, (-y/1000), x + spacing, (-y/1000) + num);
 
         textAlign(CENTER);
         fill(255);
