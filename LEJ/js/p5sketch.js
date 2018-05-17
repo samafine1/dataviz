@@ -52,7 +52,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(x, (y/1000), x + spacing, (-y/1000) + num1);
+        rect(x, (y/1000), x + spacing, (y/1000) + num1);
 
         textAlign(CENTER);
         fill(255);
