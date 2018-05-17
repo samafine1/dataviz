@@ -30,7 +30,7 @@ function draw() {
     }
     row=table.getRow(r);
     time = row.getNum(0);
-    sensor = row.getstr(1);
+    sensor = row.saveStrings(1);
 
     print(time); //optional but helpful
     print(sensor);
