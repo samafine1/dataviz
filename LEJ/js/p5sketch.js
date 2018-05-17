@@ -32,7 +32,7 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 0; i < 400; i += 20) {
-        line(30, i, -500, i);
+        line(30, i-300, 500, i-300);
         text(20 + (parseInt(i)), 30, i);
     }
 
