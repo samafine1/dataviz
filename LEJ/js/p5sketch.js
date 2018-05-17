@@ -32,8 +32,8 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 0; i < 400; i += 20) {
-        line(50, i+300, 500, i+300);
-        text((parseInt(i)), 330, i);
+        line(50, i+1000, 500, i+1000);
+        text((parseInt(i)), 1030, i);
     }
 
     //iterate thorough all rows of CSV file
@@ -61,8 +61,8 @@ function setup() {
         y += spacing;
     }
     noStroke();
-    text("activity", 30, y+10);
-     text("# of Volunteers", 30, x);
+    text("activity", 100, y+10);
+     text("# of Volunteers", 100, x);
 }
 
 function draw() {
