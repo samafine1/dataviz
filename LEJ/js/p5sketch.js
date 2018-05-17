@@ -6,12 +6,10 @@ var row;
 var activity;
 var num;
 var spacing = 25;
-// let U = "Urban Greening"
-// let C = "Community Stewardship"
-// let D = "Community Development"
-// let E = "Eco-Literacy"
-// let A = "Urban Greening, Community Stewardship, Community Development"
-// let B = "Urban Greening, Eco-Literacy"
+let U = "Urban Greening"
+let C = "Community Stewardship"
+let D = "Community Development"
+let E = "Eco-Literacy"
 var x;
 var y;
 
@@ -24,7 +22,7 @@ function preload() {
 function setup() {
     //setup look
     createCanvas(1000, 600);
-    background(200, 50, 240);
+    background(180);
     rectMode(CORNERS);
 
     //location variables
@@ -33,7 +31,7 @@ function setup() {
 
     //draw graph lines
     stroke(255);
-    for (var i = 20; i < 400; i += 20) {
+    for (var i = 0; i < 400; i += 20) {
         line(30, i, 500, i);
         text(20 + (parseInt(i)), 30, i);
     }
@@ -43,7 +41,7 @@ function setup() {
         row = table.getRow(r);
         //print it column by column
         //note: a row is an object, not an array
-        num = row.getNum(1);
+        num = row.getNum(0);
 
     //optional but helpful
         print(num);
