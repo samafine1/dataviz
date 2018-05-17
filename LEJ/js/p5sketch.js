@@ -72,8 +72,8 @@ function setup() {
 function draw() {
     //nothing here
 }
-Given the CSV file "data.csv"
-in the project's "assets" folder:
+// Given the CSV file "data.csv"
+// in the project's "assets" folder:
 
 // var table;
 // var row;
