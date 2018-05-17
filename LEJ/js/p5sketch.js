@@ -32,12 +32,12 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 0; i < 400; i += 20) {
-        line(30, i, 500, i);
+        line(30, i, -500, i);
         text(20 + (parseInt(i)), 30, i);
     }
 
     //iterate thorough all rows of CSV file
-    for (var r = 1; r < table.getRowCount(); r++) {
+    for (var r = 0; r < table.getRowCount(); r++) {
         row = table.getRow(r);
         //print it column by column
         //note: a row is an object, not an array
