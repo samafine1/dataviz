@@ -29,11 +29,11 @@ function setup() {
 
     //location variables
     x = 50;
-    y = 100;
+    y = 50;
 
     //draw graph lines
     stroke(255);
-    for (var i = 20; i < y; i += 20) {
+    for (var i = 20; i < 400; i += 20) {
         line(30, i, 500, i);
         text(20 + (parseInt(i)), 30, i);
     }
