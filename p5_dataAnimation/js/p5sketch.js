@@ -30,7 +30,6 @@ function draw() {
     }
     row=table.getRow(r);
     time = row.getNum(0);
-    sensor = row.getNum(1);
 
     print(time); //optional but helpful
     print(sensor);
@@ -40,9 +39,9 @@ function draw() {
     //look of ellipses
     stroke(255 - time, time, 255);
     strokeWeight(10);
-    fill(sensor, 255 - sensor, 255); //fill color determined by time
+    fill(150, 155, 255); //fill color determined by time
 
-    ellipse(width / 2, height / 2, sensor * 2, sensor * 2); //size determined by CSV data
+    ellipse(width / 2, height / 2, time * 2, time * 2); //size determined by CSV data
 
     noStroke();
     textSize(30);
