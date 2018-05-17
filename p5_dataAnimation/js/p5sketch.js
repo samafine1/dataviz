@@ -32,7 +32,6 @@ function draw() {
     time = row.getNum(0);
 
     print(time); //optional but helpful
-    print(sensor);
 
     time = map(time, 0, 50, 30, 255); //remap the time variable
     sensor = map(sensor, 40, 30000, 25, 200); //remap the sensor variable
