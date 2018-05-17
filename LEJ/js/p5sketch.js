@@ -3,8 +3,8 @@
 
 var table;
 var row;
-var time;
-var sensor;
+var activity;
+var num;
 var spacing = 25;
 // let U = "Urban Greening"
 // let C = "Community Stewardship"
@@ -26,8 +26,8 @@ function setup() {
     createCanvas(1000, 600);
     background(200, 50, 240);
     rectMode(CORNERS);
-    //location variables
 
+    //location variables
     x = 50;
     y = height - 50;
 
@@ -35,28 +35,28 @@ function setup() {
     stroke(255);
     for (var i = 20; i < y; i += 10) {
         line(30, i, 500, i);
-        text(540000 - (parseInt(i))*1000, 30, i);
+        text(20 - (parseInt(i)), 30, i);
     }
 
     //iterate thorough all rows of CSV file
-    for (var r = 0; r < table.getRowCount(); r++) {
+    for (var r = 1; r < table.getRowCount(); r++) {
         row = table.getRow(r);
         //print it column by column
         //note: a row is an object, not an array
-        activity = row.getNum(0);
-        num = row.getNum(1);
+        activity = row.getNum(1);
+        num = row.getNum(2);
 
         print(activity); //optional but helpful
         print(num);
 
-        activity = map(activity/10000, 0, 50, 15, 255); //remap the time variable
-        num = map(num/10000, 40, 15, 25, 450); //remap the sensor variable
+        activity1 = map(activity/10000, 0, 50, 15, 255); //remap the time variable
+        num1 = map(num/10000, 40, 15, 25, 450); //remap the sensor variable
         //look of ellipses
-        fill(255, 100, activity, 120); //time changes the fill color
+        fill(255, 100, activity1, 120); //time changes the fill color
         strokeWeight(1);
-        stroke(Activity);
+        stroke(activity1);
 
-        rect(x, (-y/1000), x + spacing, (-y/1000) + num);
+        rect(x, (-y/1000), x + spacing, (-y/1000) + num1);
 
         textAlign(CENTER);
         fill(255);
@@ -65,7 +65,7 @@ function setup() {
         y += spacing;
     }
     noStroke();
-    text("Activity", 30, y+10);
+    text("activity", 30, y+10);
      text("# of Volunteers", 30, x);
 }
 
