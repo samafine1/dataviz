@@ -58,7 +58,7 @@ function setup() {
     }
     noStroke();
     text("activity", 100, y+10);
-     text("# of Volunteers", 100, x);
+     text("# of Volunteers", 200, x);
 }
 
 function draw() {
