@@ -28,7 +28,7 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 0; i < 208; i += 13) {
-        line(50, i-110, 450, i-110);
+        line(50, i-90, 450, i-90);
         text(i, 1030, i);
     }
 
@@ -49,7 +49,6 @@ function setup() {
         stroke(num1);
 
         rect(x, -400, x + spacing, -400 - num1);
-        print("golddigger");
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
