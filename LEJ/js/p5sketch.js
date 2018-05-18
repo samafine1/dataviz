@@ -58,13 +58,13 @@ function setup() {
     }
     noStroke();
     text("1", 500, 550);
-    text("2", 500, 550);
-    text("3", 500, 550);
-    text("4", 500, 550);
-    text("1", 100, y+10);
-    text("2", 120, y+30);
-    text("3", 140, y+50);
-    text("4", 160, y+90);
+    text("2", 505, 550);
+    text("3", 510, 550);
+    text("4", 505, 550);
+    text("1", 615, y+10);
+    text("2", 615, y+20);
+    text("3", 615, y+50);
+    text("4", 615, y+90);
     text("activity", 500, y+10);
     text("Urban Greening", 500,y+30);
     text("Community Stewardship", 500,y+50);
