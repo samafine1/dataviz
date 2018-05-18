@@ -6,10 +6,6 @@ var row;
 var activity;
 var num;
 var spacing = 25;
-let U = "Urban Greening"
-let C = "Community Stewardship"
-let D = "Community Development"
-let E = "Eco-Literacy"
 var x;
 var y;
 
@@ -31,9 +27,9 @@ function setup() {
 
     //draw graph lines
     stroke(255);
-    for (var i = 0; i < 400; i += 20) {
+    for (var i = 0; i < 25; i += 1) {
         line(50, i+1000, 500, i+1000);
-        text((parseInt(i)), 1030, i);
+        text(i, 1030, i);
     }
 
     //iterate thorough all rows of CSV file
