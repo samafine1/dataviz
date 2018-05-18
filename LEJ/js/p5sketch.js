@@ -48,7 +48,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(x, -100, x + spacing, -100 - num1);
+        rect(x, +100, x + spacing, +100 - num1);
 
         textAlign(CENTER);
         fill(255);
