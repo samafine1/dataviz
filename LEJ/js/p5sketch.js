@@ -62,7 +62,7 @@ function setup() {
     text("3", 510, 550);
     text("4", 505, 550);
     text("1", 615, y+10);
-    text("2", 615, y+20);
+    text("2", 615, y+30);
     text("3", 615, y+50);
     text("4", 615, y+90);
     text("activity", 500, y+10);
