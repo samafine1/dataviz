@@ -28,7 +28,7 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 0; i < 208; i += 13) {
-        line(50, i+1000, 450, i+1000);
+        line(50, i-100, 450, i-100);
         text(i, 1030, i);
     }
 
@@ -48,7 +48,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(x, 1000, x + spacing, 1000 - num1);
+        rect(x, -100, x + spacing, -100 - num1);
 
         textAlign(CENTER);
         fill(255);
