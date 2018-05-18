@@ -57,12 +57,20 @@ function setup() {
         y += spacing;
     }
     noStroke();
-    text("activity", 100, y+10);
-    text("Urban Greening", 200,y+30);
-    text("Community Stewardship", 300,y+10);
-    text("Community Development", 400,y+30);
-    text("Eco-Literacy", 500,y+10)
-    text("# of Volunteers", 200, x);
+    text("1", 500, 550);
+    text("2", 500, 550);
+    text("3", 500, 550);
+    text("4", 500, 550);
+    text("1", 100, y+10);
+    text("2", 120, y+30);
+    text("3", 140, y+50);
+    text("4", 160, y+90);
+    text("activity", 500, y+10);
+    text("Urban Greening", 500,y+30);
+    text("Community Stewardship", 500,y+50);
+    text("Community Development", 500,y+70);
+    text("Eco-Literacy", 500,y+90)
+    text("# of Volunteers", 500, x);
 }
 
 function draw() {
