@@ -48,7 +48,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(x, -200, x + spacing, -200 - num1);
+        rect(x, -50, x + spacing, -50 - num1);
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
