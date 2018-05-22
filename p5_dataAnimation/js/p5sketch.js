@@ -17,7 +17,6 @@ function preload() {
 function setup() {
     //setup look
     createCanvas(1000, 600);
-    ellipseMode(CENTER);
     frameRate(1);       //control timing
     background(50);
 }
@@ -40,9 +39,7 @@ function draw() {
     stroke(255 - time, time, 255);
     strokeWeight(10);
     fill(150, 155, 255); //fill color determined by time
-    push();
-    translate(spacing,0);
-    ellipse(width / 2, height / 2, sensor, sensor * 2); //size determined by CSV data
+    ellipse(width/2 + spacing, height/2, sensor, sensor); //size determined by CSV data
     spacing = spacing +25
     noStroke();
     textSize(30);
