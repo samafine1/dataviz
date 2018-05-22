@@ -56,17 +56,17 @@ function setup() {
         x += spacing;
         y += spacing;
         y1 = 25 + y1;
+            noStroke();
+        text("1", 2*x, 490-num1);
+        text("2", 2*x, 490-num1);
+        text("3", 2*x, 490-num1);
+        text("4", 2*x, 490-num1);
+        text("1", 615, y+10);
+        text("2", 615, y+50);
+        text("3", 615, y+70);
+        text("4", 615, y+90);
+        text(act, 500, y1+10);
     }
-    noStroke();
-    text("1", 500, 550);
-    text("2", 505, 550);
-    text("3", 510, 550);
-    text("4", 505, 550);
-    text("1", 615, y+10);
-    text("2", 615, y+50);
-    text("3", 615, y+70);
-    text("4", 615, y+90);
-    text(act, 500, y1+10);
     
     r++
 }
