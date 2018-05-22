@@ -8,6 +8,7 @@ var num;
 var spacing = 25;
 var x;
 var y;
+var y1 = 50
 
 function preload() {
     //table is comma separated value "csv"
@@ -38,6 +39,7 @@ function setup() {
         //print it column by column
         //note: a row is an object, not an array
         num = row.getNum(0);
+        act = row.getString(1)
 
     //optional but helpful
         print(num);
@@ -54,22 +56,19 @@ function setup() {
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
         x += spacing;
         y += spacing;
+        y1 = 25 + y1;
     }
     noStroke();
     text("1", 500, 550);
     text("2", 505, 550);
     text("3", 510, 550);
     text("4", 505, 550);
-    text("1", 615, y+30);
+    text("1", 615, y+10);
     text("2", 615, y+50);
     text("3", 615, y+70);
     text("4", 615, y+90);
-    text("activity", 500, y+10);
-    text("Urban Greening", 500,y+30);
-    text("Community Stewardship", 500,y+50);
-    text("Community Development", 500,y+70);
-    text("Eco-Literacy", 500,y+90)
-    text("# of Volunteers", 500, x);
+    text(act, 500, y1+10);
+
 }
 
 function draw() {
