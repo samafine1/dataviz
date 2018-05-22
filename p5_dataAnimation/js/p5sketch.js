@@ -6,6 +6,7 @@ var row;
 var r = 0;
 var time;
 var sensor;
+var spacing=25;
 
 function preload() {
     //table is comma separated value "csv"
@@ -30,7 +31,7 @@ function draw() {
     }
     row=table.getRow(r);
     time = row.getNum(0);
-    sensor = row.saveStrings(1);
+    sensor = row.getNum(1);
 
     print(time); //optional but helpful
     print(sensor);
@@ -42,13 +43,13 @@ function draw() {
     strokeWeight(10);
     fill(150, 155, 255); //fill color determined by time
 
-    ellipse(width / 2, height / 2, time * 2, time * 2); //size determined by CSV data
-
+    ellipse(width / 2 +spacing, height / 2, sensor * 2 +spacing, sensor * 2); //size determined by CSV data
+    spacing = spacing +25
     noStroke();
     textSize(30);
     textAlign(LEFT);
-    text("Time " + parseInt(time), 10, (time*2)+20); 
-    text("Value " + parseInt(sensor), width-150, (time*2)+20); 
+    text("Date " + parseInt(time), 10, (time*2)+20); 
+    text("# of Volunteers " + parseInt(sensor), width-150, (time*2)+20); 
 
     r++;
 
