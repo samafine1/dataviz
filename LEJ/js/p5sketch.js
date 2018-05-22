@@ -20,7 +20,6 @@ function setup() {
     //setup look
     createCanvas(1000, 600);
     background(180);
-    rectMode(CORNERS);
 
     //location variables
     x = 50;
@@ -50,7 +49,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(x, -50, x + spacing, -50 - num1);
+        rect(x, y, x + spacing, num1);
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
