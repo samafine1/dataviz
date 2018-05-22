@@ -28,8 +28,8 @@ function setup() {
     //draw graph lines
     stroke(255);
     for (var i = 0; i < 208; i += 13) {
-        line(50, i-200, 450, i-200);
-        text(i, 500, i-200);
+        line(50, i+200, 450, i+200);
+        text(i, 500, i+200);
     }
 
     //iterate thorough all rows of CSV file
@@ -49,7 +49,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(2*x-150, 50-num1, 50, num1);
+        rect(2*x, 150-num1, 50, num1);
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
