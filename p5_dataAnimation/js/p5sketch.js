@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
     //setup look
-    createCanvas(600, 600);
+    createCanvas(1000, 600);
     ellipseMode(CENTER);
     frameRate(1);       //control timing
     background(50);
