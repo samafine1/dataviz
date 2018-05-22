@@ -29,7 +29,7 @@ function setup() {
     stroke(255);
     for (var i = 0; i < 300; i += 20) {
         line(50, i+200, 450, i+200);
-        text(30-i/10, 460, i+200);
+        text(32-i/10, 460, i+200);
     }
 
     //iterate thorough all rows of CSV file
