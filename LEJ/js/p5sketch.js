@@ -49,7 +49,7 @@ function setup() {
         strokeWeight(1);
         stroke(num1);
 
-        rect(2*x, y, 50, num1);
+        rect(2*x, 50-num1, 50, num1);
         textAlign(CENTER);
         fill(255);
         //text(parseInt(sensor), x + (spacing / 2), y + 10); //printing sensor value as int to avoid decimal places
