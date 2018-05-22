@@ -67,7 +67,8 @@ function setup() {
     text("3", 615, y+70);
     text("4", 615, y+90);
     text(act, 500, y1+10);
-
+    
+    r++
 }
 
 function draw() {
