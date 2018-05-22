@@ -36,8 +36,6 @@ function draw() {
     print(time); //optional but helpful
     print(sensor);
 
-    time = map(time, 0, 50, 30, 255); //remap the time variable
-    sensor = map(sensor, 40, 30000, 25, 200); //remap the sensor variable
     //look of ellipses
     stroke(255 - time, time, 255);
     strokeWeight(10);
