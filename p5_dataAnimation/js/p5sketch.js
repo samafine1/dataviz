@@ -39,12 +39,13 @@ function draw() {
     stroke(255 - time, time, 255);
     strokeWeight(10);
     fill(150, 155, 255); //fill color determined by time
-    ellipse(width/2 + spacing, height/2, sensor, sensor); //size determined by CSV data
+    ellipse(50 + spacing, 50, sensor, sensor); //size determined by CSV data
     spacing = spacing +25
     noStroke();
     textSize(30);
     textAlign(LEFT);
-    text("Date " + time, 10+spacing, 20); 
+    text("Date " , 10, 20); 
+    text(time,50+spacing,70)
     text("# of Volunteers " + sensor, 10 + spacing, 40); 
 
     r++;
