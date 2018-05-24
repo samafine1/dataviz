@@ -46,7 +46,8 @@ function draw() {
     textAlign(LEFT);
     text("Date " , 10, 20); 
     text(time,50+spacing,70)
-    text("# of Volunteers " + sensor, 10 + spacing, 40); 
+    text("# of Volunteers ", 10, 40); 
+    text(sensor,50+spacing,80)
 
     r++;
 
