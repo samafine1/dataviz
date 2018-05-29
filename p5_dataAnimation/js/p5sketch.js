@@ -39,7 +39,7 @@ function draw() {
     stroke(255 - time, time, 255);
     strokeWeight(10);
     fill(150, 155, 255); //fill color determined by time
-    ellipse(50 + spacing, height/2, 10*sensor, 10*sensor); //size determined by CSV data
+    ellipse(60 + spacing, height/2, 10*sensor, 10*sensor); //size determined by CSV data
     spacing = spacing +35
     noStroke();
     textSize(30);
