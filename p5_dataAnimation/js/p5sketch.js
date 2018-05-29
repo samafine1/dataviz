@@ -46,8 +46,8 @@ function draw() {
     textAlign(LEFT);
     text("Date (1.2 translates to 1/2/2018)" , 10, 20); 
     text("# of Volunteers ", 10, 60); 
-    textSize(20);
-    text(time,20+spacing,270);
+    textSize(15);
+    text(time,20+spacing,265);
     text(sensor + "v",20+spacing,325);
  
 
