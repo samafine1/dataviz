@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
     //setup look
-    createCanvas(1000, 600);
+    createCanvas(1500, 600);
     frameRate(1);       //control timing
     background(50);
 }
